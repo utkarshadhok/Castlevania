@@ -1,98 +1,119 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f1f7fc; /* Soft off-white background for a calm, airy feel */
-    color: #333;
+
+/* Reset default styles */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f8ff; /* Light bluish background */
+    color: #333;
     text-align: center;
+    margin: 0;
+    padding: 0;
 }
 
-header {
-    background: #0097a7; /* Sea blue background for a fresh and calm look */
-    padding: 20px;
-}
-
-header h1 {
-    font-size: 32px;
-    color: #fff;
-}
-
-header p {
-    font-size: 18px;
-    color: #fff;
-    margin-top: 5px;
-}
-
-section {
+/* Container */
+.container {
+    text-align: center;
+    padding: 50px;
     max-width: 800px;
-    margin: 20px auto;
-    padding: 25px;
-    background: #e1f5fe; /* Light sea blue background to keep it calm and inviting */
-    border-radius: 12px;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    margin: auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border: 2px solid #ff4500;
+}
+
+/* Headings */
+h1 {
+    font-size: 2.5em;
+    color: #ff4500;
 }
 
 h2 {
-    color: #d32f2f; /* Rosy pink color for the headings to add a warm tone */
-    border-bottom: 2px solid #d32f2f;
+    color: #ff4500;
+    border-bottom: 2px solid #ff4500;
     padding-bottom: 10px;
     margin-bottom: 15px;
     font-size: 28px;
 }
 
-ul {
-    list-style: none;
-    padding: 0;
+/* Paragraphs */
+p {
+    font-size: 1.2em;
+    color: #333;
 }
 
-ul li {
-    background: #b2dfdb; /* Soft teal background for list items */
+/* List Styling */
+ul {
+    text-align: left;
+    display: inline-block;
+    padding-left: 20px;
+    font-size: 1.1em;
+    margin-top: 20px;
+    list-style: none;
+}
+
+li {
+    margin: 15px 0;
+    background: #ffe4e1;
     padding: 12px;
-    margin: 8px 0;
     border-radius: 8px;
     font-size: 18px;
     text-align: left;
     color: #333;
 }
 
-.details p {
-    font-size: 16px;
-    background: #e1f5fe; /* Light sea blue for additional information */
-    padding: 12px;
-    border-radius: 8px;
-    margin: 8px 0;
-    text-align: left;
-    color: #333;
+li::before {
+    content: "🎉";
+    margin-right: 10px;
 }
 
-.booking {
-    display: flex;
-    justify-content: center;
-    margin: 25px 0;
-}
-
-.book-btn {
-    background: #0097a7; /* Sea blue for the button to maintain the calming theme */
-    color: #fff;
+/* Button */
+button {
+    background-color: #ff4500;
+    color: white;
     padding: 15px 30px;
-    font-size: 22px;
-    font-weight: bold;
-    text-decoration: none;
-    border-radius: 8px;
-    transition: 0.3s;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 30px;
+    transition: all 0.3s ease;
 }
 
-.book-btn:hover {
-    background: #00796b; /* Slightly darker teal on hover for an elegant touch */
+button:hover {
+    background-color: #ff6347;
 }
 
+/* Footer */
 footer {
-    padding: 15px;
-    background: #0097a7; /* Footer in the same sea blue to maintain a cohesive look */
-    font-size: 16px;
-    color: #fff;
+    margin-top: 50px;
+    font-size: 1.2em;
+    color: #ff4500;
+    text-align: center;
 }
 
 footer p {
-    margin: 0;
+    font-size: 1.1em;
+    color: #ff4500;
 }
+
+/* Back to Homepage Button */
+a[href*="homepage"] {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 10px 20px;
+    background-color: pink;
+    color: white;
+    font-family: 'Brush Script MT', cursive;
+    font-size: 24px;
+    text-decoration: none;
+    border-radius: 8px;
+    z-index: 1000;
+}
+
